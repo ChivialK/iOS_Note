@@ -8,12 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		93AA4D6E19CC1CEE00008644 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 93AA4D6D19CC1CEE00008644 /* main.m */; };
-		93AA4D7119CC1CEE00008644 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 93AA4D7019CC1CEE00008644 /* AppDelegate.m */; };
+		93AA4D7119CC1CEE00008644 /* NoteAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 93AA4D7019CC1CEE00008644 /* NoteAppDelegate.m */; };
 		93AA4D7419CC1CEE00008644 /* Note.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 93AA4D7219CC1CEE00008644 /* Note.xcdatamodeld */; };
-		93AA4D7719CC1CEE00008644 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93AA4D7619CC1CEE00008644 /* ViewController.m */; };
+		93AA4D7719CC1CEE00008644 /* NoteListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93AA4D7619CC1CEE00008644 /* NoteListViewController.m */; };
 		93AA4D7A19CC1CEE00008644 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93AA4D7819CC1CEE00008644 /* Main.storyboard */; };
 		93AA4D7C19CC1CEE00008644 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93AA4D7B19CC1CEE00008644 /* Images.xcassets */; };
 		93AA4D8819CC1CEE00008644 /* NoteTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 93AA4D8719CC1CEE00008644 /* NoteTests.m */; };
+		93AA4D9819CC221E00008644 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93AA4D9719CC221E00008644 /* AVFoundation.framework */; };
+		93AA4D9A19CC222900008644 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93AA4D9919CC222900008644 /* Foundation.framework */; };
+		93AA4D9C19CC223000008644 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93AA4D9B19CC223000008644 /* UIKit.framework */; };
+		93AA4D9E19CC223C00008644 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93AA4D9D19CC223C00008644 /* CoreGraphics.framework */; };
+		93AA4DA019CC224500008644 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93AA4D9F19CC224500008644 /* MessageUI.framework */; };
+		93AA4DB019CC261C00008644 /* NotesList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 93AA4DAF19CC261C00008644 /* NotesList.plist */; };
+		93AA4DBB19CC28CC00008644 /* CustomSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 93AA4DB219CC28CC00008644 /* CustomSegue.m */; };
+		93AA4DBC19CC28CC00008644 /* CustomUnwindSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 93AA4DB419CC28CC00008644 /* CustomUnwindSegue.m */; };
+		93AA4DBD19CC28CC00008644 /* DetailNoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93AA4DB619CC28CC00008644 /* DetailNoteViewController.m */; };
+		93AA4DBE19CC28CC00008644 /* NoteData.m in Sources */ = {isa = PBXBuildFile; fileRef = 93AA4DB819CC28CC00008644 /* NoteData.m */; };
+		93AA4DBF19CC28CC00008644 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93AA4DBA19CC28CC00008644 /* WebViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,16 +41,32 @@
 		93AA4D6819CC1CEE00008644 /* Note.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Note.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93AA4D6C19CC1CEE00008644 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		93AA4D6D19CC1CEE00008644 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		93AA4D6F19CC1CEE00008644 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		93AA4D7019CC1CEE00008644 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		93AA4D6F19CC1CEE00008644 /* NoteAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NoteAppDelegate.h; sourceTree = "<group>"; };
+		93AA4D7019CC1CEE00008644 /* NoteAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NoteAppDelegate.m; sourceTree = "<group>"; };
 		93AA4D7319CC1CEE00008644 /* Note.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Note.xcdatamodel; sourceTree = "<group>"; };
-		93AA4D7519CC1CEE00008644 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		93AA4D7619CC1CEE00008644 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		93AA4D7519CC1CEE00008644 /* NoteListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NoteListViewController.h; sourceTree = "<group>"; };
+		93AA4D7619CC1CEE00008644 /* NoteListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NoteListViewController.m; sourceTree = "<group>"; };
 		93AA4D7919CC1CEE00008644 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		93AA4D7B19CC1CEE00008644 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		93AA4D8119CC1CEE00008644 /* NoteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NoteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		93AA4D8619CC1CEE00008644 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		93AA4D8719CC1CEE00008644 /* NoteTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NoteTests.m; sourceTree = "<group>"; };
+		93AA4D9719CC221E00008644 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		93AA4D9919CC222900008644 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		93AA4D9B19CC223000008644 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		93AA4D9D19CC223C00008644 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		93AA4D9F19CC224500008644 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		93AA4DAF19CC261C00008644 /* NotesList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = NotesList.plist; sourceTree = "<group>"; };
+		93AA4DB119CC28CC00008644 /* CustomSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomSegue.h; sourceTree = "<group>"; };
+		93AA4DB219CC28CC00008644 /* CustomSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomSegue.m; sourceTree = "<group>"; };
+		93AA4DB319CC28CC00008644 /* CustomUnwindSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomUnwindSegue.h; sourceTree = "<group>"; };
+		93AA4DB419CC28CC00008644 /* CustomUnwindSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomUnwindSegue.m; sourceTree = "<group>"; };
+		93AA4DB519CC28CC00008644 /* DetailNoteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailNoteViewController.h; sourceTree = "<group>"; };
+		93AA4DB619CC28CC00008644 /* DetailNoteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailNoteViewController.m; sourceTree = "<group>"; };
+		93AA4DB719CC28CC00008644 /* NoteData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoteData.h; sourceTree = "<group>"; };
+		93AA4DB819CC28CC00008644 /* NoteData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoteData.m; sourceTree = "<group>"; };
+		93AA4DB919CC28CC00008644 /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		93AA4DBA19CC28CC00008644 /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +74,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93AA4DA019CC224500008644 /* MessageUI.framework in Frameworks */,
+				93AA4D9E19CC223C00008644 /* CoreGraphics.framework in Frameworks */,
+				93AA4D9C19CC223000008644 /* UIKit.framework in Frameworks */,
+				93AA4D9A19CC222900008644 /* Foundation.framework in Frameworks */,
+				93AA4D9819CC221E00008644 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +95,7 @@
 		93AA4D5F19CC1CEE00008644 = {
 			isa = PBXGroup;
 			children = (
+				93AA4DA119CC224B00008644 /* Framework */,
 				93AA4D6A19CC1CEE00008644 /* Note */,
 				93AA4D8419CC1CEE00008644 /* NoteTests */,
 				93AA4D6919CC1CEE00008644 /* Products */,
@@ -81,12 +114,19 @@
 		93AA4D6A19CC1CEE00008644 /* Note */ = {
 			isa = PBXGroup;
 			children = (
-				93AA4D6F19CC1CEE00008644 /* AppDelegate.h */,
-				93AA4D7019CC1CEE00008644 /* AppDelegate.m */,
-				93AA4D7519CC1CEE00008644 /* ViewController.h */,
-				93AA4D7619CC1CEE00008644 /* ViewController.m */,
+				93AA4DAB19CC257100008644 /* Custom */,
+				93AA4D6F19CC1CEE00008644 /* NoteAppDelegate.h */,
+				93AA4D7019CC1CEE00008644 /* NoteAppDelegate.m */,
 				93AA4D7819CC1CEE00008644 /* Main.storyboard */,
 				93AA4D7B19CC1CEE00008644 /* Images.xcassets */,
+				93AA4DB919CC28CC00008644 /* WebViewController.h */,
+				93AA4DBA19CC28CC00008644 /* WebViewController.m */,
+				93AA4D7519CC1CEE00008644 /* NoteListViewController.h */,
+				93AA4D7619CC1CEE00008644 /* NoteListViewController.m */,
+				93AA4DB519CC28CC00008644 /* DetailNoteViewController.h */,
+				93AA4DB619CC28CC00008644 /* DetailNoteViewController.m */,
+				93AA4DB719CC28CC00008644 /* NoteData.h */,
+				93AA4DB819CC28CC00008644 /* NoteData.m */,
 				93AA4D7219CC1CEE00008644 /* Note.xcdatamodeld */,
 				93AA4D6B19CC1CEE00008644 /* Supporting Files */,
 			);
@@ -96,6 +136,7 @@
 		93AA4D6B19CC1CEE00008644 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				93AA4DAF19CC261C00008644 /* NotesList.plist */,
 				93AA4D6C19CC1CEE00008644 /* Info.plist */,
 				93AA4D6D19CC1CEE00008644 /* main.m */,
 			);
@@ -117,6 +158,29 @@
 				93AA4D8619CC1CEE00008644 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		93AA4DA119CC224B00008644 /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				93AA4D9F19CC224500008644 /* MessageUI.framework */,
+				93AA4D9D19CC223C00008644 /* CoreGraphics.framework */,
+				93AA4D9B19CC223000008644 /* UIKit.framework */,
+				93AA4D9919CC222900008644 /* Foundation.framework */,
+				93AA4D9719CC221E00008644 /* AVFoundation.framework */,
+			);
+			name = Framework;
+			sourceTree = "<group>";
+		};
+		93AA4DAB19CC257100008644 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				93AA4DB119CC28CC00008644 /* CustomSegue.h */,
+				93AA4DB219CC28CC00008644 /* CustomSegue.m */,
+				93AA4DB319CC28CC00008644 /* CustomUnwindSegue.h */,
+				93AA4DB419CC28CC00008644 /* CustomUnwindSegue.m */,
+			);
+			name = Custom;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,6 +264,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				93AA4D7A19CC1CEE00008644 /* Main.storyboard in Resources */,
+				93AA4DB019CC261C00008644 /* NotesList.plist in Resources */,
 				93AA4D7C19CC1CEE00008644 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -218,10 +283,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93AA4DBD19CC28CC00008644 /* DetailNoteViewController.m in Sources */,
 				93AA4D7419CC1CEE00008644 /* Note.xcdatamodeld in Sources */,
-				93AA4D7119CC1CEE00008644 /* AppDelegate.m in Sources */,
-				93AA4D7719CC1CEE00008644 /* ViewController.m in Sources */,
+				93AA4D7119CC1CEE00008644 /* NoteAppDelegate.m in Sources */,
+				93AA4D7719CC1CEE00008644 /* NoteListViewController.m in Sources */,
+				93AA4DBF19CC28CC00008644 /* WebViewController.m in Sources */,
 				93AA4D6E19CC1CEE00008644 /* main.m in Sources */,
+				93AA4DBE19CC28CC00008644 /* NoteData.m in Sources */,
+				93AA4DBB19CC28CC00008644 /* CustomSegue.m in Sources */,
+				93AA4DBC19CC28CC00008644 /* CustomUnwindSegue.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,6 +407,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = Note/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -348,6 +419,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = Note/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -406,6 +478,7 @@
 				93AA4D8D19CC1CEE00008644 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		93AA4D8E19CC1CEE00008644 /* Build configuration list for PBXNativeTarget "NoteTests" */ = {
 			isa = XCConfigurationList;
@@ -414,6 +487,7 @@
 				93AA4D9019CC1CEE00008644 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
